@@ -60,6 +60,8 @@ void salvar_Arquivo(TipoLista *L);
 
 void carregarContas(TipoLista *L);*/
 
+TipoLista L;
+
 int main();
 
 #endif

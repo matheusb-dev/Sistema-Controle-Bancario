@@ -46,7 +46,7 @@ void menu_contas()
         switch (opc)
         {
         case 1:
-            break;
+            cadastrar_conta(&L);
         case 2:
             break;
         case 3:
