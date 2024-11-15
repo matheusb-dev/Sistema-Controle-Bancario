@@ -11,9 +11,11 @@ void menu_contas()
 {
 
     int opc;
-    system("color 0A");
+    system("color 8A");
 
     system("cls"); // limpa tela
+
+    carregarContas(&L); // Carregar contas do arquivo
 
     do
     {
@@ -46,7 +48,8 @@ void menu_contas()
         switch (opc)
         {
         case 1:
-            cadastrar_conta(&L);
+            cadastrar_conta(&L); // Função de cadastro de contas
+            break;
         case 2:
             break;
         case 3:
@@ -60,9 +63,10 @@ void menu_contas()
         case 7:
             break;
         case 8:
-            //consultar_conta(&L);
-            break;
+            consultar_conta(&L); // Função de consulta de contasb
         case 9:
+            salvar_Arquivo(&L); // Salvar contas no arquivo ao sair
+            printf("Saindo....");
             break;
         default:
             gotoxy(6, 23);

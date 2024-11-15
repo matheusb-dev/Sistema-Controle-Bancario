@@ -54,11 +54,11 @@ void cadastrar_conta(TipoLista *L);
 
 //int contador(TipoLista *L);
 
-/*void consultar_conta(TipoLista *L);
+void consultar_conta(TipoLista *L);
 
 void salvar_Arquivo(TipoLista *L);
 
-void carregarContas(TipoLista *L);*/
+void carregarContas(TipoLista *L);
 
 TipoLista L;
 

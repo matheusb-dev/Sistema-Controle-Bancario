@@ -1,14 +1,16 @@
 /* Autor......: Otávio Augusto
-   Data.......: 13/11/2024
+   Data.......: 12/11/2024
    Equipe.....: 159752-2023 - Otávio Augusto
                 166479-2024 - Matheus Bezerra
-   Objetivo...: Função para cadastrar no final da lista
+   Objetivo...: Criar a tela de Menu de Contas
 */
 
 #include "funcoes.h" //Onde esta armazenado nossa estrutura de dados
 
 void cadastrar_conta(TipoLista *L)
 {
+
+    // declarando variaveis
 
     reg_conta reg_c; // conteudo das contas
     ContaBancaria p;
@@ -17,10 +19,9 @@ void cadastrar_conta(TipoLista *L)
     do
     {
         tela();
-        tela_contas();
 
-        gotoxy(55, 03);
-        printf("INSERINDO CONTA NO FINAL");
+        gotoxy(54, 03);
+        printf("INSERINDO CONTA NO INICIO");
 
         // SCANFS PARA LEITURA DOS DADOS
 
@@ -75,19 +76,13 @@ void cadastrar_conta(TipoLista *L)
             }
 
             p->conteudo = reg_c;
-            p->proximo = NULL;
+            p->proximo = L->Primeiro;
+            L->Primeiro = p;
 
-            if (L->Primeiro == NULL) // Se a lista estiver vazia
+            if (L->Ultimo == NULL)
             {
-                L->Primeiro = p;
                 L->Ultimo = p;
             }
-            else // se tiver elementos na lista
-            {
-                L->Ultimo->proximo = p;
-                L->Ultimo = p;
-            }
-
             gotoxy(7, 23);
             printf("                                             ");
             gotoxy(7, 23);
