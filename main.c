@@ -5,7 +5,7 @@ int main()
     TipoLista L = {NULL, NULL};
     int opc;
     system("color 0A");
-
+    //teste
     system("cls"); // Limpa a tela
 
     do

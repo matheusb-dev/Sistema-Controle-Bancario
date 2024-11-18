@@ -7,17 +7,17 @@
         "command": "gcc",
         "args": [
           "-g",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/main.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/cadastrar_contas.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/tela_contas.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/tela_padrao.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/menu_contas.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/s.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/c.c",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/consultar_contas.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/main.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/cadastrar_contas.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/tela_contas.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/tela_padrao.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/menu_contas.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/s.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/c.c",
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/consultar_contas.c",
 
           "-o",
-          "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/output/bancario"
+          "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/output/bancario"
         ],
         "group": {
           "kind": "build",
@@ -31,7 +31,7 @@
       {
         "label": "Executar Programa",
         "type": "shell",
-        "command": "C:/Users/leiti/OneDrive/Documentos/Sistema Controle Bancario/output/bancario",
+        "command": "C:/Users/leiti/OneDrive/Documentos/Sistema-Controle-Bancario/output/bancario",
         "group": {
           "kind": "test",
           "isDefault": true
