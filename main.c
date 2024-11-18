@@ -7,7 +7,6 @@ int main()
     system("color 0A");
 
     system("cls"); // Limpa a tela
-    //carregarContas(&L); // Carregar contas do arquivo
 
     do
     {
@@ -26,7 +25,7 @@ int main()
         switch (opc)
         {
         case 1:
-            menu_contas(); // Função de cadastro de contas
+            menu_contas();
             break;
         case 2:
             consultar_conta(&L);
@@ -40,7 +39,7 @@ int main()
             getch();
             break;
         }
-        salvar_Arquivo(&L); // Salvar contas no arquivo ao sair
+        //salvar_Arquivo(&L); // Salvar contas no arquivo ao sair
     } while (opc != 3);
 
     return 0;
